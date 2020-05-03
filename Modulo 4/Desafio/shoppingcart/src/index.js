@@ -1,8 +1,7 @@
 const promotions = ["SINGLE LOOK", "DOUBLE LOOK", "TRIPLE LOOK", "FULL LOOK"];
 
 const getProductsInfo = (ids, productsList) => {
-  productsList =
-    productsList.filter((product) => ids.includes(product.id)) || [];
+  productsList = productsList.filter((product) => ids.includes(product.id));
   const products = productsList.map((product) => ({
     name: product.name,
     category: product.category,
