@@ -8,25 +8,13 @@ const getProductsInfo = (ids, productsList) => {
     category: product.category,
   }));
 
-  const categories = [];
+  const categories = productsList.reduce((categories, product) => {
+    return categories.includes(product.category)
+      ? categories
+      : [...categories, product.category];
+  }, []);
 
-  productsList.map((item) => {
-    if (categories.includes(item.category)) return false;
-    categories.push(item.category);
-  });
-
-  const promotion = (categories) => {
-    switch (categories.length) {
-      case 1:
-        return promotions[0];
-      case 2:
-        return promotions[1];
-      case 3:
-        return promotions[2];
-      case 4:
-        return promotions[3];
-    }
-  };
+  const promotion = promotions[categories.length - 1];
 
   let totalWithoutDiscount = 0;
   let totalWithDiscount = [];
@@ -34,7 +22,7 @@ const getProductsInfo = (ids, productsList) => {
   productsList.forEach((product, index) => {
     totalWithoutDiscount += product.regularPrice;
     product.promotions.forEach((promo) => {
-      if (promo.looks.includes(promotion(categories))) {
+      if (promo.looks.includes(promotion)) {
         totalWithDiscount.push(promo.price);
       }
     });
@@ -55,7 +43,7 @@ const getProductsInfo = (ids, productsList) => {
 
   return {
     products,
-    promotion: promotion(categories),
+    promotion,
     totalWithDiscount,
     discountValue,
     discountPerc,
