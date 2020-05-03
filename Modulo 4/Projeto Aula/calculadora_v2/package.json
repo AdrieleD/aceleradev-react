@@ -1,0 +1,19 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "pacote calculadora",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Adriele Dutra Souza",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.5.3",
+    "prompt-sync": "^4.2.0",
+    "prompt-sync-history": "^1.0.1"
+  }
+}
