@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1588553393620" clover="3.2.0">
+  <project timestamp="1588553393622" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11" elements="30" coveredelements="30" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+    <file name="filtro-aula.js" path="C:\Users\Adriele\Desktop\aceleradev-react\Modulo 4\Projeto Aula\ricky-morty\src\filtro-aula.js">
+      <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
+      <line num="2" count="60" type="stmt"/>
+      <line num="6" count="60" type="stmt"/>
+      <line num="10" count="153" type="stmt"/>
+      <line num="11" count="153" type="stmt"/>
+      <line num="15" count="152" type="stmt"/>
+      <line num="19" count="21" type="stmt"/>
+      <line num="21" count="21" type="stmt"/>
+      <line num="23" count="21" type="stmt"/>
+      <line num="24" count="150" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="119" type="stmt"/>
+      <line num="29" count="119" type="stmt"/>
+      <line num="32" count="31" type="stmt"/>
+      <line num="35" count="21" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="20" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -1,0 +1,14 @@
+{
+  "name": "ricky-morty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Adriele Dutra Souza",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^25.5.3"
+  }
+}
